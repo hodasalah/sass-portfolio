@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>sass template</title>
+        <!-- Website Favicon Icon -->
+        <link rel="icon" href="images/hodasalah.png" />
+        <!-- Google Fonts -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Poppins:200,400,500%7CPlayball"
+        />
+        <!-- Website Style File -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body class="waves-style">
+        <!-- Start Preloader -->
+        <svg style="display: none">
+            <defs>
+                <filter id="gooey">
+                    <feGaussianBlur
+                        in="SourceGraphic"
+                        stdDeviation="10"
+                        result="blur"
+                    />
+                    <feColorMatrix
+                        in="blur"
+                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                        result="filter"
+                    />
+                    <feComposite
+                        in="SourceGraphic"
+                        in2="filter"
+                        operator="atop"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
+        <div class="preloader">
+            <div class="content">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+        <header id="home" class="home section padding0 has-shapes not-img-bg">
+            <canvas id="rainbow-canvas" class="rainbow-canvas"></canvas>
+            <div class="overlay">
+                <div class="bg-shapes">
+                    <img src="images/wave-shapes.png" alt="" />
+                </div>
+                <nav>
+                    <div class="container">
+                        <h1 class="logo">
+                            <a href="index.html">hS^dev</a>
+                        </h1>
+                        <div class="navigation">
+                            <ul class="direct-links">
+                                <li><a href="#">My CV</a></li>
+                            </ul>
+                            <a
+                                class="rounded-btn main-color-one fill reverse shadow"
+                                href="#"
+                                >contact Me</a
+                            >
+                            <div class="nav-menu-button hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="nav-menu-container">
+                                <h2 class="logo">
+                                    <a href="index.html">hS^dev</a>
+                                </h2>
+                                <ul class="nav-menu">
+                                    <li class="menu-item">
+                                        <a
+                                            class="active"
+                                            href="#"
+                                            data-value="#home"
+                                            >Home</a
+                                        >
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#about" data-value="#about"
+                                            >About</a
+                                        >
+                                    </li>
+                                    <li class="menu-item">
+                                        <a
+                                            href="#services"
+                                            data-value="#services"
+                                            >Services</a
+                                        >
+                                    </li>
+                                    <li class="menu-item">
+                                        <a
+                                            href="#portfolio"
+                                            data-value="#portfolio"
+                                            >Portfolio</a
+                                        >
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#ourteam" data-value="#team"
+                                            >Our Team</a
+                                        >
+                                    </li>
+                                    <li class="menu-item">
+                                        <a
+                                            href="#testimonials"
+                                            data-value="#testimonials"
+                                            >Testimonials</a
+                                        >
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#clients" data-value="#clients"
+                                            >Clients</a
+                                        >
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#pricing" data-value="#pricing"
+                                            >Pricing</a
+                                        >
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#contact" data-value="#contact"
+                                            >Contact</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Header Slider -->
+                <div id="header-slider" class="slider">
+                    <div class="container">
+                        <div class="slider-content">
+                            <div class="slider-item">
+                                <div>
+                                    <h4 class="sub-head">We Are Creative</h4>
+                                    <h2>
+                                        Makeing Awesome
+                                        <span class="typed-word"></span>
+                                    </h2>
+                                    <p>
+                                        There are many variations of passages of
+                                        Lorem Ipsum available, but the majority
+                                        have suffered alteration in some form,
+                                        by injected humour, or randomised words
+                                    </p>
+                                    <div class="buttons-container">
+                                        <a
+                                            class="rounded-btn main-color-one fill reverse shadow"
+                                            href="#"
+                                            >Get Started</a
+                                        >
+                                        <a
+                                            class="rounded-btn white-one fill reverse shadow"
+                                            href="#"
+                                            >Explore More</a
+                                        >
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/content-03.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Header Slider -->
+            </div>
+        </header>
+        <!-- End Header -->
+        <!-- Start About -->
+        <div id="about" class="about section">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-title="who we are">About us</h2>
+                </div>
+                <div class="about-content section-content">
+                    <div class="about-video">
+                        <a
+                            href="https://www.youtube.com/watch?v=6gWWOR5cS5g"
+                            title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                        >
+                            <img
+                                src="images/about-video.jpg"
+                                alt="about-video"
+                            />
+                            <span class="video-icon">
+                                <img
+                                    src="images/play-button2.svg"
+                                    alt="about-video"
+                                />
+                            </span>
+                        </a>
+                    </div>
+                    <div class="about-text section-text">
+                        <h3 class="section-sub-heading">Our Mission</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and
+                            scrambled it to make a type specimen book. It has
+                            survived not only five centuries, but also the leap
+                            into electronic typesetting, remaining essentially
+                            unchanged. It was popularised in the 1960s with the
+                            release of Letraset sheets containing Lorem Ipsum
+                            passages, and more recently with desktop publishing
+                            software like Aldus PageMaker including versions of
+                            Lorem Ipsum.
+                        </p>
+                        <div class="video-play-button">
+                            <a href="#">
+                                <img
+                                    src="images/play-button.svg"
+                                    alt="video-button"
+                                />
+                                Watch Our Story
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End About -->
+
+        <!-- Start Services -->
+        <div id="services" class="services section padding0">
+            <div class="bg-shapes">
+                <img src="images/wave-shapes.png" alt="" />
+            </div>
+            <div class="div-margin">
+                <div class="container">
+                    <div class="section-title">
+                        <h2 data-title="What we do">Services</h2>
+                    </div>
+                    <div class="services-content section-content">
+                        <div class="services-item">
+                            <div class="services-item-icon">
+                                <img
+                                    src="images/services/services-1.svg"
+                                    alt="services-1"
+                                />
+                            </div>
+                            <h3 class="services-title">Graphic Design</h3>
+                            <p>
+                                Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore
+                            </p>
+                            <div class="buttons-container">
+                                <a
+                                    class="rounded-btn main-color-one fill"
+                                    href="#"
+                                    >Read More</a
+                                >
+                            </div>
+                        </div>
+                        <div class="services-item">
+                            <div class="services-item-icon">
+                                <img
+                                    src="images/services/services-2.svg"
+                                    alt="services-2"
+                                />
+                            </div>
+                            <h3 class="services-title">Photography</h3>
+                            <p>
+                                Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore
+                            </p>
+                            <div class="buttons-container">
+                                <a
+                                    class="rounded-btn main-color-one fill"
+                                    href="#"
+                                    >Read More</a
+                                >
+                            </div>
+                        </div>
+                        <div class="services-item">
+                            <div class="services-item-icon">
+                                <img
+                                    src="images/services/services-3.svg"
+                                    alt="services-3"
+                                />
+                            </div>
+                            <h3 class="services-title">Marketing</h3>
+                            <p>
+                                Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore
+                            </p>
+                            <div class="buttons-container">
+                                <a
+                                    class="rounded-btn main-color-one fill"
+                                    href="#"
+                                    >Read More</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-shapes">
+                <img src="images/wave-shapes.png" alt="" />
+            </div>
+        </div>
+        <!-- End Services -->
+
+        <!-- Start Portfolio -->
+        <div id="portfolio" class="portfolio section">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-title="our best work">Portfolio</h2>
+                </div>
+                <div class="portfolio-content section-content">
+                    <ul class="work-cat">
+                        <li class="active">All</li>
+                        <li data-value="graphic">Graphic Design</li>
+                        <li data-value="web">Web Design</li>
+                        <li data-value="photography">Photography</li>
+                        <li><a href="#">More</a></li>
+                    </ul>
+                    <div class="portfolio-items">
+                        <a
+                            class="item animated zoomIn photography"
+                            href="#"
+                            title="Caption for project 1"
+                        >
+                            <img
+                                src="images/portfolio/portfolio-1.jpg"
+                                alt="portfolio-1"
+                            />
+                            <div class="overlay">
+                                <h3 class="title animated fadeInUp">
+                                    Project Title
+                                </h3>
+                                <h4 class="category animated fadeInUp">
+                                    Photography
+                                </h4>
+                            </div>
+                        </a>
+                        <a
+                            class="item animated zoomIn graphic"
+                            href="#"
+                            title="Caption for project 2"
+                        >
+                            <img
+                                src="images/portfolio/portfolio-2.jpg"
+                                alt="portfolio-2"
+                            />
+                            <div class="overlay">
+                                <h3 class="title animated fadeInUp">
+                                    Project Title
+                                </h3>
+                                <h4 class="category animated fadeInUp">
+                                    Graphic Design
+                                </h4>
+                            </div>
+                        </a>
+                        <a
+                            class="item animated zoomIn web"
+                            href="#"
+                            title="Caption for project 3"
+                        >
+                            <img
+                                src="images/portfolio/portfolio-3.jpg"
+                                alt="portfolio-3"
+                            />
+                            <div class="overlay">
+                                <h3 class="title animated fadeInUp">
+                                    Project Title
+                                </h3>
+                                <h4 class="category animated fadeInUp">
+                                    Web Design
+                                </h4>
+                            </div>
+                        </a>
+                        <a
+                            class="item animated zoomIn photography"
+                            href="#"
+                            title="Caption for project 4"
+                        >
+                            <img
+                                src="images/portfolio/portfolio-4.jpg"
+                                alt="portfolio-4"
+                            />
+                            <div class="overlay">
+                                <h3 class="title animated fadeInUp">
+                                    Project Title
+                                </h3>
+                                <h4 class="category animated fadeInUp">
+                                    Photography
+                                </h4>
+                            </div>
+                        </a>
+                        <a
+                            class="item animated zoomIn graphic"
+                            href="#"
+                            title="Caption for project 5"
+                        >
+                            <img
+                                src="images/portfolio/portfolio-5.jpg"
+                                alt="portfolio-5"
+                            />
+                            <div class="overlay">
+                                <h3 class="title animated fadeInUp">
+                                    Project Title
+                                </h3>
+                                <h4 class="category animated fadeInUp">
+                                    Graphic Design
+                                </h4>
+                            </div>
+                        </a>
+                        <a
+                            class="item animated zoomIn web"
+                            href="#"
+                            title="Caption for project 6"
+                        >
+                            <img
+                                src="images/portfolio/portfolio-6.jpg"
+                                alt="portfolio-6"
+                            />
+                            <div class="overlay">
+                                <h3 class="title animated fadeInUp">
+                                    Project Title
+                                </h3>
+                                <h4 class="category animated fadeInUp">
+                                    Web Design
+                                </h4>
+                            </div>
+                        </a>
+                        <a
+                            class="item animated zoomIn graphic"
+                            href="#"
+                            title="Caption for project 7"
+                        >
+                            <img
+                                src="images/portfolio/portfolio-7.jpg"
+                                alt="portfolio-7"
+                            />
+                            <div class="overlay">
+                                <h3 class="title animated fadeInUp">
+                                    Project Title
+                                </h3>
+                                <h4 class="category animated fadeInUp">
+                                    Graphic Design
+                                </h4>
+                            </div>
+                        </a>
+                        <a
+                            class="item animated zoomIn web"
+                            href="#"
+                            title="Caption for project 8"
+                        >
+                            <img
+                                src="images/portfolio/portfolio-8.jpg"
+                                alt="portfolio-8"
+                            />
+                            <div class="overlay">
+                                <h3 class="title animated fadeInUp">
+                                    Project Title
+                                </h3>
+                                <h4 class="category animated fadeInUp">
+                                    Web Design
+                                </h4>
+                            </div>
+                        </a>
+                        <a
+                            class="item animated zoomIn web"
+                            href="#"
+                            title="Caption for project 9"
+                        >
+                            <img
+                                src="images/portfolio/portfolio-9.jpg"
+                                alt="portfolio-9"
+                            />
+                            <div class="overlay">
+                                <h3 class="title animated fadeInUp">
+                                    Project Title
+                                </h3>
+                                <h4 class="category animated fadeInUp">
+                                    Web Design
+                                </h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Portfolio -->
+
+        <!-- Start Team -->
+        <div id="team" class="team section">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-title="Our great team">Our Team</h2>
+                </div>
+                <div class="team-content section-content">
+                    <div class="team-member">
+                        <img
+                            src="images/team/member-1.jpg"
+                            alt="team-member-1"
+                        />
+                        <div class="overlay">
+                            <h4 class="name">Tamer Tawfik</h4>
+                            <h5 class="job-title">Art Director</h5>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img
+                            src="images/team/member-2.jpg"
+                            alt="team-member-2"
+                        />
+                        <div class="overlay">
+                            <h4 class="name">John Doe</h4>
+                            <h5 class="job-title">VP of Product Design</h5>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img
+                            src="images/team/member-3.jpg"
+                            alt="team-member-3"
+                        />
+                        <div class="overlay">
+                            <h4 class="name">Albert Ken</h4>
+                            <h5 class="job-title">Front End-developer</h5>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img
+                            src="images/team/member-4.jpg"
+                            alt="team-member-4"
+                        />
+                        <div class="overlay">
+                            <h4 class="name">Hogan Smith</h4>
+                            <h5 class="job-title">CEO &amp; Founder</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Team -->
+
+        <!-- Start Testimonials -->
+        <div id="testimonials" class="testimonials section padding0">
+            <div class="bg-shapes">
+                <img src="images/wave-shapes.png" alt="" />
+            </div>
+            <div class="div-margin">
+                <div class="container">
+                    <div class="section-title">
+                        <h2 data-title="What people say">Testimonials</h2>
+                    </div>
+                </div>
+                <div class="testimonials-content section-content">
+                    <div class="slider owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="client-details">
+                                <img
+                                    src="images/testimonials/testimonials-1.jpg"
+                                    alt="testimonials-1"
+                                />
+                                <div class="name">
+                                    <h3>Tamer Tawfik</h3>
+                                    <h5>Art Director</h5>
+                                </div>
+                            </div>
+                            <p>
+                                One duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident.
+                            </p>
+                            <div class="quotes">
+                                <i
+                                    class="fa fa-quote-left"
+                                    aria-hidden="true"
+                                ></i>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="client-details">
+                                <img
+                                    src="images/testimonials/testimonials-2.jpg"
+                                    alt="testimonials-2"
+                                />
+                                <div class="name">
+                                    <h3>John Doe</h3>
+                                    <h5>VP Of Product Design</h5>
+                                </div>
+                            </div>
+                            <p>
+                                Two duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident.
+                            </p>
+                            <div class="quotes">
+                                <i
+                                    class="fa fa-quote-left"
+                                    aria-hidden="true"
+                                ></i>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="client-details">
+                                <img
+                                    src="images/testimonials/testimonials-3.jpg"
+                                    alt="testimonials-3"
+                                />
+                                <div class="name">
+                                    <h3>Albert Ken</h3>
+                                    <h5>Front End-developer</h5>
+                                </div>
+                            </div>
+                            <p>
+                                Three duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident.
+                            </p>
+                            <div class="quotes">
+                                <i
+                                    class="fa fa-quote-left"
+                                    aria-hidden="true"
+                                ></i>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="client-details">
+                                <img
+                                    src="images/testimonials/testimonials-4.jpg"
+                                    alt="testimonials-4"
+                                />
+                                <div class="name">
+                                    <h3>Hogan Smith</h3>
+                                    <h5>CEO &amp; Founder</h5>
+                                </div>
+                            </div>
+                            <p>
+                                Four duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident.
+                            </p>
+                            <div class="quotes">
+                                <i
+                                    class="fa fa-quote-left"
+                                    aria-hidden="true"
+                                ></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-shapes">
+                <img src="images/wave-shapes.png" alt="" />
+            </div>
+        </div>
+        <!-- End Testimonials -->
+
+        <!-- Start Clients -->
+        <div id="clients" class="clients section">
+            <div class="container">
+                <div
+                    class="clients-content section-content owl-carousel owl-theme"
+                >
+                    <div class="client">
+                        <a href="#">
+                            <img
+                                src="images/clients/client-1.png"
+                                alt="client-1"
+                            />
+                        </a>
+                    </div>
+                    <div class="client">
+                        <a href="#">
+                            <img
+                                src="images/clients/client-2.png"
+                                alt="client-2"
+                            />
+                        </a>
+                    </div>
+                    <div class="client">
+                        <a href="#">
+                            <img
+                                src="images/clients/client-3.png"
+                                alt="client-3"
+                            />
+                        </a>
+                    </div>
+                    <div class="client">
+                        <a href="#">
+                            <img
+                                src="images/clients/client-4.png"
+                                alt="client-4"
+                            />
+                        </a>
+                    </div>
+                    <div class="client">
+                        <a href="#">
+                            <img
+                                src="images/clients/client-5.png"
+                                alt="client-5"
+                            />
+                        </a>
+                    </div>
+                    <div class="client">
+                        <a href="#">
+                            <img
+                                src="images/clients/client-6.png"
+                                alt="client-6"
+                            />
+                        </a>
+                    </div>
+                    <div class="client">
+                        <a href="#">
+                            <img
+                                src="images/clients/client-7.png"
+                                alt="client-7"
+                            />
+                        </a>
+                    </div>
+                    <div class="client">
+                        <a href="#">
+                            <img
+                                src="images/clients/client-8.png"
+                                alt="client-8"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Clients -->
+
+        <!-- Start Pricing -->
+        <div id="pricing" class="pricing section padding0">
+            <div class="bg-shapes">
+                <img src="images/wave-shapes.png" alt="" />
+            </div>
+            <div class="div-margin">
+                <div class="container">
+                    <div class="section-title">
+                        <h2 data-title="Our pricing plans">Pricing</h2>
+                    </div>
+                    <div class="pricing-content section-content">
+                        <div class="plan">
+                            <div class="plan-icon">
+                                <img
+                                    src="images/pricing-plans/plan-1.svg"
+                                    alt="plan-1"
+                                />
+                            </div>
+                            <h3 class="plan-title">Basic</h3>
+                            <h2 class="plan-price">$9.99</h2>
+                            <ul>
+                                <li><span>2</span> Domains</li>
+                                <li><span>100GB</span> Disk Space</li>
+                                <li><span>50GB</span> Bandwidth</li>
+                                <li><span>5</span> Email Accounts</li>
+                                <li class="unavailable">
+                                    <span>Unlimited</span> FTP Accounts
+                                </li>
+                                <li class="unavailable">
+                                    <span>Extra</span> Free SSL
+                                </li>
+                            </ul>
+                            <div class="buttons-container">
+                                <a
+                                    class="rounded-btn main-color-one fill"
+                                    href="#"
+                                    >Order Now</a
+                                >
+                            </div>
+                        </div>
+                        <div class="plan">
+                            <div class="plan-icon">
+                                <img
+                                    src="images/pricing-plans/plan-2.svg"
+                                    alt="plan-2"
+                                />
+                            </div>
+                            <h3 class="plan-title">Standard</h3>
+                            <h2 class="plan-price">$19.99</h2>
+                            <ul>
+                                <li><span>20</span> Domains</li>
+                                <li><span>300GB</span> Disk Space</li>
+                                <li><span>150GB</span> Bandwidth</li>
+                                <li><span>250</span> Email Accounts</li>
+                                <li><span>Unlimited</span> FTP Accounts</li>
+                                <li class="unavailable">
+                                    <span>Extra</span> Free SSL
+                                </li>
+                            </ul>
+                            <div class="buttons-container">
+                                <a
+                                    class="rounded-btn main-color-one fill"
+                                    href="#"
+                                    >Order Now</a
+                                >
+                            </div>
+                        </div>
+                        <div class="plan">
+                            <div class="plan-icon">
+                                <img
+                                    src="images/pricing-plans/plan-3.svg"
+                                    alt="plan-3"
+                                />
+                            </div>
+                            <h3 class="plan-title">Premium</h3>
+                            <h2 class="plan-price">$29.99</h2>
+                            <ul>
+                                <li><span>Unlimited</span> Domains</li>
+                                <li><span>Unlimited</span> GB Disk Space</li>
+                                <li><span>Unlimited</span> GB Bandwidth</li>
+                                <li><span>500</span> Email Accounts</li>
+                                <li><span>unlimited</span> FTP Accounts</li>
+                                <li><span>Extra</span> Free SSL</li>
+                            </ul>
+                            <div class="buttons-container">
+                                <a
+                                    class="rounded-btn main-color-one fill"
+                                    href="#"
+                                    >Order Now</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-shapes">
+                <img src="images/wave-shapes.png" alt="" />
+            </div>
+        </div>
+        <!-- End Pricing -->
+
+        <!-- Start Contact -->
+        <div id="contact" class="contact section">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-title="Get in touch">Contact</h2>
+                </div>
+                <div class="contact-content section-content">
+                    <form
+                        class="contact-form"
+                        action="contact_form.php"
+                        method="post"
+                    >
+                        <div class="small-fields">
+                            <div class="form-group">
+                                <input
+                                    id="name"
+                                    type="text"
+                                    name="name"
+                                    required
+                                    value=""
+                                    onkeyup="this.setAttribute('value', this.value);"
+                                />
+                                <label for="name">Name</label>
+                                <span class="border-bottom"></span>
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    id="email"
+                                    type="email"
+                                    name="email"
+                                    required
+                                    value=""
+                                    onkeyup="this.setAttribute('value', this.value);"
+                                />
+                                <label for="email">Email</label>
+                                <span class="border-bottom"></span>
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    id="phone"
+                                    type="tel"
+                                    name="phone"
+                                    value=""
+                                    onkeyup="this.setAttribute('value', this.value);"
+                                />
+                                <label for="phone">Phone</label>
+                                <span class="border-bottom"></span>
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    id="subject"
+                                    type="text"
+                                    name="subject"
+                                    required
+                                    value=""
+                                    onkeyup="this.setAttribute('value', this.value);"
+                                />
+                                <label for="subject">Subject</label>
+                                <span class="border-bottom"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea
+                                id="message"
+                                name="message"
+                                required
+                                data-value=""
+                                onkeyup="this.setAttribute('data-value', this.value);"
+                            ></textarea>
+                            <label for="message">Message</label>
+                            <span class="border-bottom"></span>
+                        </div>
+                        <div class="buttons-container">
+                            <button
+                                class="rounded-btn main-color-two fill"
+                                type="submit"
+                            >
+                                Send Message!
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- End Contact -->
+
+        <!-- Start Footer -->
+        <footer>
+            <div class="bg-shapes">
+                <img src="images/wave-shapes.png" alt="" />
+            </div>
+            <div class="div-margin">
+                <div class="container">
+                    <div class="footer-top">
+                        <div class="widget links">
+                            <h3 class="widget-title">Who We Are</h3>
+                            <div class="widget-content">
+                                <ul>
+                                    <li><a href="#">Company</a></li>
+                                    <li><a href="#">Community</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Terms of Use</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="widget links">
+                            <h3 class="widget-title">Support</h3>
+                            <div class="widget-content">
+                                <ul>
+                                    <li><a href="#">Knowledge Base</a></li>
+                                    <li><a href="#">Tutorials</a></li>
+                                    <li><a href="#">Guides</a></li>
+                                    <li><a href="#">Video</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="widget contact-widget">
+                            <h3 class="widget-title">Contact Us</h3>
+                            <div class="widget-content">
+                                <ul>
+                                    <li class="address">
+                                        Egypt , Cairo
+                                        <br />
+                                        123 Down Town street
+                                    </li>
+                                    <li class="email">hodasalah35@gmail.com</li>
+                                    <li class="phone">002 (011)01413668</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="widget instagram-widget">
+                            <h3 class="widget-title">Instagram</h3>
+                            <div class="widget-content">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img
+                                                src="images/instagram/instagram-1.jpg"
+                                                alt="instagram-1"
+                                            />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img
+                                                src="images/instagram/instagram-2.jpg"
+                                                alt="instagram-2"
+                                            />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img
+                                                src="images/instagram/instagram-3.jpg"
+                                                alt="instagram-3"
+                                            />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img
+                                                src="images/instagram/instagram-4.jpg"
+                                                alt="instagram-4"
+                                            />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img
+                                                src="images/instagram/instagram-5.jpg"
+                                                alt="instagram-5"
+                                            />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img
+                                                src="images/instagram/instagram-6.jpg"
+                                                alt="instagram-6"
+                                            />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img
+                                                src="images/instagram/instagram-7.jpg"
+                                                alt="instagram-7"
+                                            />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img
+                                                src="images/instagram/instagram-8.jpg"
+                                                alt="instagram-8"
+                                            />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div>
+                            Made with all <i class="fa fa-heart"></i> from Egypt
+                        </div>
+                        <div>
+                            &copy; 2021 all rights reserved
+                            <a href="mailto:hodasalah35@gmail.com"
+                                >Hoda_salah</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <!-- Scroll To Top Button -->
+        <div id="Scroll-To-Top" class="Scroll-To-Top" title="Back To Top">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </div>
+        <!-- Scroll To Top Button -->
+
+        <!-- jQuery Library -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <!-- Rainbow Plugin -->
+        <script src="js/rainbow.js"></script>
+        <!-- Typed Plugin -->
+        <script src="js/typed.min.js"></script>
+        <!-- Magnific Popup Plugin -->
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <!-- Tilt Plugin -->
+        <script src="js/tilt.jquery.min.js"></script>
+        <!-- Direction Aware Hover Plugin -->
+        <script src="js/direction.aware.hover.min.js"></script>
+        <!-- Owl Carousel Slider Plugin -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- Nice Scroll Plugin -->
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <!-- Website Script File -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

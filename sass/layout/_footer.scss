@@ -1,0 +1,144 @@
+/*------------------------------------------------------------------------------------------*/
+/* 9. Footer */
+/*------------------------------------------------------------------------------------------*/
+footer {
+    background-color: $main-color-three;
+
+    .div-margin {
+        .footer-top {
+            @include flexbox(flex, "", "", between, "", wrap);
+            padding: 60px 0;
+
+            .widget {
+                width: calc((100% / 4) - 30px);
+                line-height: 1.4;
+
+                @media #{$max_767} {
+                    width: 80%;
+                    margin: {
+                        left: auto;
+                        right: auto;
+                    }
+
+                    &:not(:last-of-type) {
+                        margin-bottom: 30px;
+                    }
+                }
+
+                @media #{$max_450} {
+                    width: 90%;
+                }
+
+                .widget-title {
+                    color: #f1f1f1;
+                    font-weight: 500;
+                    margin: 0 0 22px;
+                }
+
+                ul {
+                    li {
+                        a {
+                            &:hover {
+                                color: $main-text-color-two;
+                            }
+                        }
+                    }
+                }
+
+                &.contact-widget {
+                    ul {
+                        li {
+                            &:before {
+                                font-family: "FontAwesome";
+                                display: inline-block;
+                                width: 20px;
+                                text-align: center;
+                                margin-right: 5px;
+                            }
+
+                            &.address:before {
+                                content: "\f041";
+                            }
+
+                            &.email:before {
+                                content: "\f0e0";
+                            }
+
+                            &.phone:before {
+                                content: "\f095";
+                            }
+                        }
+                    }
+                }
+
+                &.instagram-widget {
+                    ul {
+                        @include flexbox(flex, "", center, between, "", wrap);
+                        margin-bottom: -8px;
+
+                        li {
+                            width: calc(25% - 4px);
+                            background-color: $main-color-one;
+                            margin-bottom: 4px;
+
+                            a {
+                                display: block;
+
+                                img {
+                                    display: block;
+                                    height: 100%;
+                                    width: 100%;
+                                }
+
+                                &:hover {
+                                    opacity: 0.6;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.links,
+                &.contact-widget {
+                    ul {
+                        li {
+                            &:not(:last-of-type) {
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-bottom {
+            @include flexbox(flex, "", center, between, "", wrap);
+            font-size: 12px;
+            padding: 25px 0;
+            border-top: 1px solid rgba($main-text-color-one, 0.15);
+
+            @media #{$max_767} {
+                @include flexbox("", "", "", center, "", "");
+                text-align: center;
+                line-height: 1.4;
+            }
+
+            > div {
+                @media #{$max_767} {
+                    width: 90%;
+                    margin: auto;
+
+                    &:first-of-type {
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+
+            a {
+                &:hover {
+                    color: $main-color-one;
+                }
+            }
+        }
+    }
+}

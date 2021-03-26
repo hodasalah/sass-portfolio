@@ -1,0 +1,42 @@
+//------------------------------------------------------------------------------------------/
+// Variables
+//------------------------------------------------------------------------------------------/
+
+//*********************************
+//**         Color Codes         **
+//*********************************
+
+$main-color-one: #f107ab;
+$main-color-two: #04015f;
+$main-color-three: #2e323a;
+$main-text-color-one: #737b8e;
+$main-text-color-two: #999ea9;
+
+//*********************************
+//**         Media Sizes         **
+//*********************************
+
+// 1. Large Screen
+$min_1200: "(min-width: 1200px)";
+
+// 2. Medium Screen
+$min_992_max_1199: "(min-width: 992px) and (max-width: 1199px)";
+$max_1199: "(max-width: 1199px)";
+
+// 3. Small Screen
+$max_991: "(max-width: 991px)";
+
+// 4. Extra Small Screen
+$min_768: "(min-width: 768px)";
+$max_767: "(max-width: 767px)";
+
+// 5. Screen Width 600px
+$max_600: "(max-width: 600px)";
+
+// 6. Screen Width 450px
+$max_450: "(max-width: 450px)";
+
+// 7. Screen Width 350px
+$max_350: "(max-width: 350px)";
+
+$transform_dir: 1;

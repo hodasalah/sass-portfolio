@@ -1,0 +1,113 @@
+/*------------------------------------------------------------------------------------------*/
+/* 4. Defaults & Reset & Global elements */
+/*------------------------------------------------------------------------------------------*/
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    margin: 0 !important;
+}
+
+body {
+    @include transition(0.4s);
+    color: $main-text-color-one;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+p {
+    line-height: 1.6;
+    color: $main-text-color-two;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a,
+button {
+    @include transition(0.3s);
+    outline: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+}
+
+input:invalid,
+input:required,
+textarea:invalid,
+textarea:required {
+    box-shadow: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.ltr-dir {
+    direction: ltr;
+    display: inline-block;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+
+    @media #{$min_1200} {
+        width: 1170px;
+    }
+
+    @media #{$min_992_max_1199} {
+        width: 970px;
+    }
+
+    @media #{$max_991} {
+        width: 750px;
+    }
+
+    @media #{$max_767} {
+        width: auto;
+        margin: 0;
+    }
+}
+
+.bg-shapes {
+    width: 100%;
+    height: 100px;
+
+    &:first-of-type {
+        @include rotate(180);
+    }
+
+    header &:first-of-type {
+        @include rotate(0);
+    }
+
+    @media #{$max_767} {
+        height: 50px;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}

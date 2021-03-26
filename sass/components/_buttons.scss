@@ -1,0 +1,136 @@
+/*------------------------------------------------------------------------------------------*/
+/* 5. Buttons */
+/*------------------------------------------------------------------------------------------*/
+.rounded-btn.white-one,
+.rounded-btn.white-two,
+.rounded-btn.main-color-one,
+.rounded-btn.main-color-two,
+.rounded-btn.white-one.fill,
+.rounded-btn.white-two.fill,
+.rounded-btn.main-color-one.fill,
+.rounded-btn.main-color-two.fill {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.rounded-btn.white-one,
+.rounded-btn.white-two,
+.rounded-btn.white-one.fill,
+.rounded-btn.white-two.fill {
+    border-color: #fff;
+}
+
+.rounded-btn.main-color-one,
+.rounded-btn.main-color-one.fill {
+    border-color: $main-color-one;
+}
+
+.rounded-btn.main-color-two,
+.rounded-btn.main-color-two.fill {
+    border-color: $main-color-two;
+}
+
+.rounded-btn.white-one,
+.rounded-btn.white-two,
+.rounded-btn.main-color-one,
+.rounded-btn.main-color-two {
+    background-color: transparent;
+}
+
+.rounded-btn.white-one.fill,
+.rounded-btn.white-two.fill {
+    background-color: #fff;
+}
+
+.rounded-btn.main-color-one.fill {
+    background-color: $main-color-one;
+}
+
+.rounded-btn.main-color-two.fill {
+    background-color: $main-color-two;
+}
+
+.rounded-btn.white-one,
+.rounded-btn.white-two,
+.rounded-btn.main-color-one.fill,
+.rounded-btn.main-color-two.fill {
+    color: #fff;
+}
+
+.rounded-btn.white-one.fill,
+.rounded-btn.main-color-one {
+    color: $main-color-one;
+}
+
+.rounded-btn.white-two.fill,
+.rounded-btn.main-color-two {
+    color: $main-color-two;
+}
+
+.rounded-btn.white-one:hover {
+    background-color: #fff;
+    color: $main-color-one;
+}
+
+.rounded-btn.white-two:hover {
+    background-color: #fff;
+    color: $main-color-two;
+}
+
+.rounded-btn.main-color-one:hover {
+    background-color: $main-color-one;
+    color: #fff;
+}
+
+.rounded-btn.main-color-two:hover {
+    background-color: $main-color-two;
+    color: #fff;
+}
+
+.rounded-btn.white-one.fill:hover,
+.rounded-btn.white-two.fill:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.rounded-btn.white-one.fill.reverse:hover {
+    background-color: $main-color-one;
+    color: #fff;
+    border-color: $main-color-one;
+}
+
+.rounded-btn.white-two.fill.reverse:hover {
+    background-color: $main-color-two;
+    color: #fff;
+    border-color: $main-color-two;
+}
+
+.rounded-btn.main-color-one.fill:hover {
+    background-color: transparent;
+    color: $main-color-one;
+}
+
+.rounded-btn.main-color-two.fill:hover {
+    background-color: transparent;
+    color: $main-color-two;
+}
+
+.rounded-btn.main-color-one.fill.reverse:hover {
+    background-color: #fff;
+    color: $main-color-one;
+    border-color: #fff;
+}
+
+.rounded-btn.main-color-two.fill.reverse:hover {
+    background-color: #fff;
+    color: $main-color-two;
+    border-color: #fff;
+}
+
+.rounded-btn.shadow:hover {
+    -webkit-box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.3);
+}

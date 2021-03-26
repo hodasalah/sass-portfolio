@@ -1,0 +1,289 @@
+//------------------------------------------------------------------------------------------/
+// 1. Flex Box
+//------------------------------------------------------------------------------------------/
+@mixin flexbox(
+    $display,
+    $align-content,
+    $align-items,
+    $justify-content,
+    $flex-direction,
+    $flex-wrap
+) {
+    // display => values
+    @if $display == flex {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    } @else if $display == inline-flex {
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+    } @else if $display == "" {
+    }
+
+    // align-content => values
+    @if $align-content == center {
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+    } @else if $align-content == start {
+        -webkit-align-content: flex-start;
+        -ms-flex-line-pack: start;
+        align-content: flex-start;
+    } @else if $align-content == end {
+        -webkit-align-content: flex-end;
+        -ms-flex-line-pack: end;
+        align-content: flex-end;
+    } @else if $align-content == around {
+        -webkit-align-content: space-around;
+        -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    } @else if $align-content == between {
+        -webkit-align-content: space-between;
+        -ms-flex-line-pack: justify;
+        align-content: space-between;
+    } @else if $align-content == stretch {
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+    } @else if $align-content == "" {
+    }
+
+    // align-items => values
+    @if $align-items == center {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    } @else if $align-items == baseline {
+        -webkit-box-align: baseline;
+        -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+    } @else if $align-items == start {
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    } @else if $align-items == end {
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+    } @else if $align-items == stretch {
+        -webkit-box-align: stretch;
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+    } @else if $align-items == "" {
+    }
+
+    // justify-content => values
+    @if $justify-content == center {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    } @else if $justify-content == start {
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    } @else if $justify-content == end {
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    } @else if $justify-content == around {
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    } @else if $justify-content == between {
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    } @else if $justify-content == "" {
+    }
+
+    // flex-direction => values
+    @if $flex-direction == column {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    } @else if $flex-direction == column-reverse {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    } @else if $flex-direction == row {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    } @else if $flex-direction == row-reverse {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    } @else if $flex-direction == "" {
+    }
+
+    // flex-wrap => values
+    @if $flex-wrap == wrap {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    } @else if $flex-wrap == wrap-reverse {
+        -webkit-flex-wrap: wrap-reverse;
+        -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    } @else if $flex-wrap == nowrap {
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    } @else if $flex-wrap == "" {
+    }
+}
+//********************************
+//******* align-self Mixin *******
+//********************************
+@mixin align-self($align-self) {
+    // align-self => values
+    @if $align-self == center {
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    } @else if $align-self == start {
+        -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+    } @else if $align-self == end {
+        -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+    } @else if $align-self == baseline {
+        -webkit-align-self: baseline;
+        -ms-flex-item-align: baseline;
+        align-self: baseline;
+    } @else if $align-self == stretch {
+        -webkit-align-self: stretch;
+        -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    } @else if $align-self == auto {
+        -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+        -ms-grid-row-align: auto;
+        align-self: auto;
+    }
+}
+//------------------------------------------------------------------------------------------/
+// 2. Transition Mixins
+//------------------------------------------------------------------------------------------/
+@mixin transition($dur) {
+    -webkit-transition: all $dur ease-in-out;
+    -o-transition: all $dur ease-in-out;
+    transition: all $dur ease-in-out;
+}
+
+@mixin A_transition($prop, $dur, $tim) {
+    -webkit-transition: $prop $dur $tim;
+    -o-transition: $prop $dur $tim;
+    transition: $prop $dur $tim;
+}
+//------------------------------------------------------------------------------------------/
+// 3. Translate Mixins
+//------------------------------------------------------------------------------------------/
+@mixin translate($x, $y) {
+    -webkit-transform: translate($x * $transform_dir, $y);
+    -ms-transform: translate($x * $transform_dir, $y);
+    transform: translate($x * $transform_dir, $y);
+}
+
+@mixin translateX($x) {
+    -webkit-transform: translateX($x * $transform_dir);
+    -ms-transform: translateX($x * $transform_dir);
+    transform: translateX($x * $transform_dir);
+}
+
+@mixin translateY($y) {
+    -webkit-transform: translateY($y);
+    -ms-transform: translateY($y);
+    transform: translateY($y);
+}
+
+@mixin translateZ($z) {
+    -webkit-transform: translateZ($z);
+    -ms-transform: translateZ($z);
+    transform: translateZ($z);
+}
+//------------------------------------------------------------------------------------------/
+// 4. Rotate Mixins
+//------------------------------------------------------------------------------------------/
+@mixin rotate($deg) {
+    -webkit-transform: rotate($deg + deg);
+    -ms-transform: rotate($deg + deg);
+    transform: rotate($deg + deg);
+}
+
+@mixin rotateX($x) {
+    -webkit-transform: rotateX($x);
+    transform: rotateX($x);
+}
+
+@mixin rotateY($y) {
+    -webkit-transform: rotateY($y);
+    transform: rotateY($y);
+}
+
+@mixin rotateZ($z) {
+    -webkit-transform: rotateZ($z);
+    transform: rotateZ($z);
+}
+
+//------------------------------------------------------------------------------------------/
+// 5. Scale Mixins
+//------------------------------------------------------------------------------------------/
+@mixin scale($w, $h) {
+    -webkit-transform: scale($w, $h);
+    -ms-transform: scale($w, $h);
+    transform: scale($w, $h);
+}
+
+@mixin scaleX($w) {
+    -webkit-transform: scaleX($w);
+    -ms-transform: scaleX($w);
+    transform: scaleX($w);
+}
+
+@mixin scaleY($h) {
+    -webkit-transform: scaleY($h);
+    -ms-transform: scaleY($h);
+    transform: scaleY($h);
+}
+
+@mixin scaleZ($z) {
+    -webkit-transform: scaleZ($z);
+    transform: scaleZ($z);
+}
+
+//------------------------------------------------------------------------------------------/
+// 6. rotate & translateX Mixins
+//------------------------------------------------------------------------------------------/
+@mixin rotateANDtranslateX($deg, $x) {
+    -webkit-transform: rotate(($deg * $transform_dir) + deg)
+        translateX($x * $transform_dir);
+    -ms-transform: rotate(($deg * $transform_dir) + deg)
+        translateX($x * $transform_dir);
+    transform: rotate(($deg * $transform_dir) + deg)
+        translateX($x * $transform_dir);
+}
